@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "My Landing Page",
+  title: "FineLyze",
   description: "A clean, modern landing page built with Next.js 14 and Tailwind CSS.",
 };
 
