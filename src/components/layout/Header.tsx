@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -11,8 +12,9 @@ export default function Header() {
     <header className="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="container-max section-padding py-4">
         <nav className="flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-gray-900">
-            MyBrand
+          <Link href="/" className="flex items-center gap-2">
+            <Image src="/logo.png" alt="FineLyze logo" width={32} height={32} className="rounded" />
+            <span className="text-xl font-bold text-gray-900">FineLyze</span>
           </Link>
 
           <ul className="hidden md:flex items-center gap-8">
