@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "My Landing Page",
-  description: "A clean, modern landing page built with Next.js 14 and Tailwind CSS.",
+  title: "FineLyze",
+  description: "FineLyze — Audit‑grade financial automation",
 };
 
 export default function RootLayout({
