@@ -7,9 +7,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
+  { label: "How it works", href: "#features" },
   { label: "Features", href: "#features" },
+  { label: "Security", href: "#cta" },
   { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
 ];
 
 export default function Navbar() {
@@ -43,16 +44,16 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group">
+            <Link href="/" className="flex items-center gap-2.5 group">
               <Image
                 src="/logo.png"
-                alt="FineLyze logo"
-                width={32}
-                height={32}
-                className="rounded transition-transform duration-200 group-hover:scale-105"
+                alt="FineLyze"
+                width={30}
+                height={30}
+                className="rounded-lg transition-transform duration-200 group-hover:scale-105"
               />
-              <span className="text-xl font-bold text-gray-900 tracking-tight">
-                FineLyze
+              <span className="text-lg font-bold text-gray-900 tracking-tight">
+                Fine<span className="text-blue-600">Lyze</span>
               </span>
             </Link>
 
@@ -60,12 +61,11 @@ export default function Navbar() {
             <nav className="hidden md:flex items-center gap-1">
               {navLinks.map(({ label, href }) => (
                 <Link
-                  key={href}
+                  key={label}
                   href={href}
-                  className="relative px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-200 rounded-lg hover:bg-gray-100 group"
+                  className="relative px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-200 rounded-lg hover:bg-gray-100"
                 >
                   {label}
-                  <span className="absolute bottom-1 left-4 right-4 h-px bg-gray-900 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left" />
                 </Link>
               ))}
             </nav>
@@ -80,9 +80,9 @@ export default function Navbar() {
               </Link>
               <Link
                 href="#cta"
-                className="rounded-full bg-gray-900 px-5 py-2 text-sm font-semibold text-white hover:bg-gray-700 active:scale-95 transition-all duration-200"
+                className="rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white hover:bg-blue-500 active:scale-95 transition-all duration-200 shadow-sm shadow-blue-600/30"
               >
-                Get started
+                Start free trial
               </Link>
             </div>
 
@@ -120,7 +120,7 @@ export default function Navbar() {
               <nav className="flex flex-col px-4 py-4 gap-1">
                 {navLinks.map(({ label, href }, i) => (
                   <motion.div
-                    key={href}
+                    key={label}
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.05 }}
@@ -145,9 +145,9 @@ export default function Navbar() {
                   <Link
                     href="#cta"
                     onClick={() => setIsOpen(false)}
-                    className="block text-center rounded-full bg-gray-900 px-5 py-3 text-sm font-semibold text-white hover:bg-gray-700 transition-colors"
+                    className="block text-center rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-500 transition-colors"
                   >
-                    Get started
+                    Start free trial
                   </Link>
                 </div>
               </nav>

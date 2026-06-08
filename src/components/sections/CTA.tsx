@@ -34,13 +34,13 @@ export default function CTA() {
           </span>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-6 text-balance">
-            Stop guessing. Start knowing your{" "}
-            <span className="text-blue-400">financials.</span>
+            Your next audit starts{" "}
+            <span className="text-blue-400">here.</span>
           </h2>
 
           <p className="text-gray-400 text-lg mb-8 max-w-xl mx-auto text-balance">
-            Join hundreds of finance teams who use FineLyze to close faster,
-            reconcile smarter, and report with confidence.
+            Join hundreds of finance teams using FineLyze to close faster,
+            reconcile with confidence, and walk into every audit fully prepared.
           </p>
 
           {/* Perks */}
@@ -67,7 +67,7 @@ export default function CTA() {
           >
             <Link
               href="#"
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-8 py-3.5 text-sm font-semibold text-white hover:bg-blue-500 active:scale-95 transition-all duration-200"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-8 py-3.5 text-sm font-semibold text-white hover:bg-blue-500 active:scale-95 transition-all duration-200 shadow-lg shadow-blue-600/30"
             >
               Start free trial
               <ArrowRight size={16} className="transition-transform duration-200 group-hover:translate-x-0.5" />

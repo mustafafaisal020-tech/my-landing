@@ -14,44 +14,44 @@ import {
 const features = [
   {
     icon: BarChart3,
-    title: "Real-time analytics",
+    title: "Real-time financial visibility",
     description:
-      "Get instant visibility into your financial data with live dashboards and drill-down reports.",
+      "Live dashboards surface your cash position, P&L, and variance reports the moment data lands — no manual refresh needed.",
     color: "bg-blue-50 text-blue-600",
   },
   {
     icon: ShieldCheck,
     title: "Audit-grade accuracy",
     description:
-      "Every calculation is traceable. Full audit trail so you're always ready for review.",
+      "Every entry carries a full, immutable audit trail. When auditors arrive, you're ready — not scrambling.",
     color: "bg-emerald-50 text-emerald-600",
   },
   {
     icon: Zap,
-    title: "Blazing fast",
+    title: "10× faster close",
     description:
-      "Process thousands of transactions in seconds. No lag, no waiting — just results.",
+      "Slash your month-end from weeks to hours. FineLyze automates the repetitive work so your team focuses on analysis.",
     color: "bg-yellow-50 text-yellow-600",
   },
   {
     icon: FileSearch,
-    title: "Smart reconciliation",
+    title: "Automated reconciliation",
     description:
-      "Automatically match transactions across sources and flag discrepancies instantly.",
+      "Match transactions across banks, ERPs, and payment processors automatically. Discrepancies are flagged instantly.",
     color: "bg-purple-50 text-purple-600",
   },
   {
     icon: RefreshCw,
-    title: "Auto-sync",
+    title: "Always in sync",
     description:
-      "Connect your accounts once and stay in sync. Data updates in the background, always fresh.",
+      "Connect your existing tools once. FineLyze pulls live data from your ERP, bank feeds, and spreadsheets — no CSV exports.",
     color: "bg-orange-50 text-orange-600",
   },
   {
     icon: Lock,
-    title: "Bank-level security",
+    title: "Enterprise security",
     description:
-      "256-bit encryption, SOC 2 compliant, and role-based access control built in from day one.",
+      "SOC 2 Type II certified, 256-bit AES encryption at rest and in transit, and granular role-based access controls.",
     color: "bg-rose-50 text-rose-600",
   },
 ];
@@ -99,14 +99,15 @@ export default function Features() {
           className="text-center mb-16"
         >
           <span className="inline-block rounded-full bg-blue-50 px-4 py-1.5 text-xs font-semibold tracking-wide text-blue-600 uppercase mb-4">
-            Features
+            Built for finance teams
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight mb-4">
-            Everything your finance team needs
+            Replace five spreadsheets with one platform
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto text-balance">
-            FineLyze brings together the tools that used to live in five different
-            spreadsheets — in one clean, fast interface.
+            FineLyze unifies reconciliation, reporting, and compliance into a
+            single audit-ready workspace — so your team stops firefighting and
+            starts leading.
           </p>
         </motion.div>
 
